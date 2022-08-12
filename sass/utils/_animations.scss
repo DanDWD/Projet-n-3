@@ -24,3 +24,34 @@
     animation-delay: 1s;
 }
 
+
+
+@keyframes move-left {
+    0% {
+              transform: translateX(0);
+    }
+    100% {
+              transform: translateX(-70px);
+    }
+}
+
+@keyframes move-return {
+    0% {
+              transform: translateX(-70px);
+              opacity: 0%;
+    }
+    100% {
+              transform: translateX(0px);
+              opacity: 100%;
+    }
+  }
+
+
+  @keyframes icon-rotate {
+    0% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+  }
