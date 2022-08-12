@@ -37,7 +37,7 @@
         display: block;
         text-decoration: none;
         margin: 5px 0;
-        @include l-screen { 
+        @include tablette { 
             margin-right: 15px;
         }
         &:hover {
