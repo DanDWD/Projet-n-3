@@ -1,0 +1,31 @@
+.heart {
+    @include centering();
+    height: 38px;
+    width: 38px;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+        & .fa-heart {
+            @include centering();
+            font-size: 26px;
+            position: absolute;
+        }
+        & .fa-regular {
+            color: $blackColor;
+            z-index: 3;
+            background-color: transparent;  
+        }
+        & .fa-solid {
+            color: $primaryColor;
+            background: linear-gradient($primaryColor, $secondaryColor);
+            background-clip: text;
+            fill-opacity: 1;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            z-index: 5;
+        }
+        & .fa-solid:hover {
+            transition-duration: 0.4s;
+            opacity: 1;
+        }
+}
