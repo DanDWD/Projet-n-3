@@ -15,4 +15,20 @@
     object-fit: cover;
 }
 
+.introduction-tag {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0px;
+    @include tablette {
+        display: block;
+    }
+    @include desktop {
+        display: block;
+    }
+        &__h1 {
+            font-size: 27px;
+            font-weight: 500;
+        }
+}
 
