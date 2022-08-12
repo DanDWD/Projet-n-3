@@ -1,8 +1,10 @@
 $primaryColor: #9356DC;
 $secondaryColor: #FF79DA;
 $tertiaryColor: #99E2D0;
+$blackColor: #000;
+$whiteColor: #fff;
 
 $breakpoints: (
-  tablette: 768px,
-  desktop: 992px,
+  medium-size: 768px,
+  large-size: 992px,
 );
