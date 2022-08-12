@@ -180,7 +180,7 @@
 }
 
 .menu-infos {
-    @include fcentering();
+    @include centering();
     padding: 15px;
     position: relative;
     &__text {
