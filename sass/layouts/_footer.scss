@@ -14,11 +14,11 @@
     &__heading {
         font-weight: 400;
         margin: 10px 0;
-        @include m-screen { 
+        @include tablette { 
             width: 50%;
             text-align: center; 
         }
-        @include l-screen { 
+        @include desktop { 
             width: 25%;
             text-align: center; 
         }
