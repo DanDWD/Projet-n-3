@@ -17,3 +17,110 @@
     }
 }
 
+.search-btn {
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+        &__heading {
+            font-weight: 700;
+            padding: 20px;
+            @include tablette {
+                text-transform: uppercase;
+            }
+            @include desktop {
+                text-transform: uppercase;
+            }
+        & > br {
+            @include tablette {
+                display: none;
+            }
+            @include desktop {
+                display: none;
+            }
+            }
+        }
+        &__byline {
+            color: #7e7e7e;
+
+        & > br {
+            @include tablette { 
+                display: none;
+            }
+        }
+    }
+}
+
+.functioning {
+    width: 100%;
+    padding: 0px 15px;
+    &__heading {
+        font-weight: 700;
+        font-size: 22px;
+        margin: 40px auto 20px auto;
+        text-align: left;
+    }
+    &__nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.functionality {
+    padding: 0;
+        @include desktop {
+            display: flex; 
+            gap: 20px; 
+        }
+    & li {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+    }
+    & li:before {
+        @include centering();
+        position: absolute;
+        color: $whiteColor;
+        margin-left: -10px;
+        width: 25px;
+        height: 25px;
+        border-radius: 100px;
+    }
+}
+
+.functionality-tag {
+    @include centering();
+    border: none;
+    background-color: #f6f6f6;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 20px;
+    width: 95%;
+    font-weight: 700;
+    box-shadow: 1px 2px 20px 0px rgba(255, 255, 255, 0.5);
+    &:hover {
+        color: #000000;
+        box-shadow: 1px 2px 15px 0px rgba(191, 191, 191, 0.3);
+        background-color: #f5edff;
+    }
+    &:hover .functionality-tag__icon {
+        background-color: $primaryColor;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__icon {
+        font-size: 18px;
+        color: #5f5e5e;
+        flex: 1;
+    }
+    &__text {
+        font-size: 14px;
+        text-align: left;
+        flex: 2;
+    }
+}
