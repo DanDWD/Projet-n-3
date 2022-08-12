@@ -1,5 +1,5 @@
 @mixin tablette {
-    @media all and (min-width: map-get($breakpoints, medium-size)) and (max-width: map-get($breakpoints, large-screen)) {
+    @media all and (min-width: map-get($breakpoints, medium-size)) and (max-width: map-get($breakpoints, large-size)) {
         @content;
     }
 }
