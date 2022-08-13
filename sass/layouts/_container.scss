@@ -7,6 +7,12 @@
     background-color: #f6f6f6;
     border-radius: 50px 50px 0 0;
     position: relative;
+    @include tablette {
+        
+    }
+    @include desktop {
+        
+    }
 }
 
 .introduction__picture {
