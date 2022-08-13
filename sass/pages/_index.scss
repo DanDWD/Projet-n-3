@@ -27,6 +27,7 @@
     padding: 20px;
     text-align: center;
         &__heading {
+            font-family: 'Roboto', sans-serif;
             font-weight: 700;
             padding: 20px;
             @include tablette {
@@ -97,7 +98,7 @@
 }
 
 .functionality-tag {
-    @include centering();
+    @include centering;
     border: none;
     background-color: #f6f6f6;
     padding: 20px;
