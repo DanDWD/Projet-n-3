@@ -750,7 +750,7 @@ a {
 
 .loader {
   background: rgb(255, 255, 255);
-  background: radial-gradient(rgb(212, 212, 212), rgb(255, 255, 255));
+  background: radial-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
   bottom: 0;
   left: 0;
   overflow: hidden;
