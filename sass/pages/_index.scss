@@ -1,5 +1,9 @@
+.main {
+    background-color: #f6f6f6;
+}
+
 .search-bar {
-    @include centering();
+    @include centering;
     width: 100%;
     padding: 15px;
     color: #353434;
