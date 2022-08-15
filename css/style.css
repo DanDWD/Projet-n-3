@@ -419,7 +419,7 @@ template {
   font-family: "Raleway", sans-serif;
 }
 
-h1 {
+h1, h4 {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
 }
@@ -436,7 +436,7 @@ a {
   cursor: pointer;
   padding: 15px;
   margin: 40px 20px 20px 20px;
-  border-radius: 18px;
+  border-radius: 20px;
   box-shadow: 2px 2px 5px 2px rgba(56, 55, 55, 0.3);
   width: 200px;
 }
@@ -872,7 +872,7 @@ a {
     display: none;
   }
 }
-.main {
+.main-index {
   background-color: #f6f6f6;
 }
 
@@ -882,9 +882,9 @@ a {
   justify-content: center;
   width: 100%;
   padding: 15px;
-  color: #353434;
-  background-color: #e6e3e3;
-  box-shadow: 0px -3px 4px 0px rgba(41, 41, 41, 0.2);
+  color: #353535;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 3px 4px 0px rgba(41, 41, 41, 0.2);
 }
 .search-bar__icon {
   font-size: 18px;
@@ -929,7 +929,7 @@ a {
   }
 }
 .search-btn__byline {
-  color: #7e7e7e;
+  color: #575656;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .search-btn__byline > br {
