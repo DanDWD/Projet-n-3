@@ -490,7 +490,7 @@ a {
   height: 58px;
 }
 .header__logo {
-  height: 38px;
+  height: 35px;
 }
 
 .footer {
@@ -904,6 +904,7 @@ a {
   text-align: center;
 }
 .search-btn__heading {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   padding: 20px;
 }
