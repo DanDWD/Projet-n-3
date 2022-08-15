@@ -87,7 +87,7 @@
         list-style: none;
     }
     & li:before {
-        @include centering();
+        @include centering;
         position: absolute;
         color: $whiteColor;
         margin-left: -10px;
