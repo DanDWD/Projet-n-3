@@ -112,7 +112,7 @@
 }
 
 .selection-rotate {
-    @include centering();
+    @include centering;
     background-color: $whiteColor;
     width: 25px;
     height: 25px;
