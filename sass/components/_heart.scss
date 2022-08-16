@@ -11,13 +11,13 @@
             position: absolute;
         }
         & .fa-regular {
-            color: $blackColor;
+            color: $blackcolor;
             z-index: 3;
             background-color: transparent;  
         }
         & .fa-solid {
-            color: $primaryColor;
-            background: linear-gradient($primaryColor, $secondaryColor);
+            color: $primarycolor;
+            background: linear-gradient($primarycolor, $secondarycolor);
             background-clip: text;
             fill-opacity: 1;
             -webkit-text-fill-color: transparent;
