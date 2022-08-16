@@ -57,7 +57,7 @@
 
 .functioning {
     width: 100%;
-    padding: 0px 15px;
+    padding: 0 10px 0 15px;
     &__heading {
         font-weight: 700;
         font-size: 22px;
@@ -157,6 +157,7 @@
 }
 
 .menu {
+    width: 100%;
     background-color: $whitecolor;
     text-decoration: none;
     border-radius: 15px;
@@ -165,7 +166,7 @@
     position: relative;
     margin: 0 auto;
     &:hover {
-        transform: scale(1.03);
+        transform: scale(1.05);
     }
     &__pictures {
         border-radius: 15px 15px 0 0;
