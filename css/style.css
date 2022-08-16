@@ -431,7 +431,7 @@ a {
 .btn {
   color: #fff;
   font-size: 13px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   cursor: pointer;
   padding: 15px;
