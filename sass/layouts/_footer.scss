@@ -12,8 +12,9 @@
         align-items: center;
     }
     &__heading {
-        font-weight: 400;
+        font-weight: lighter;
         margin: 10px 0;
+        font-size: 18px;
         @include tablette { 
             width: 50%;
             text-align: center; 
@@ -52,4 +53,7 @@
             margin-right: 5px;
         }
     }
+        & ul {
+            list-style-type: none;
+        }
 }
