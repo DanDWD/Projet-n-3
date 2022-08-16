@@ -26,16 +26,16 @@
     width: 100%;
     padding: 1px 0 30px 0;
     text-align: center;
-        &__heading {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 700;
-            padding: 20px;
-            @include tablette {
-                text-transform: uppercase;
-            }
-            @include desktop {
-                text-transform: uppercase;
-            }
+    &__heading {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        padding: 20px;
+        @include tablette {
+            text-transform: uppercase;
+        }
+        @include desktop {
+            text-transform: uppercase;
+        }
         & > br {
             @include tablette {
                 display: none;
@@ -43,11 +43,10 @@
             @include desktop {
                 display: none;
             }
-            }
         }
-        &__byline {
-            color: #575656;
-
+    }
+    &__byline {
+        color: #575656;
         & > br {
             @include tablette { 
                 display: none;
