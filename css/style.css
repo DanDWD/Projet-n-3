@@ -900,7 +900,7 @@ a {
 .search-btn {
   background-color: #f6f6f6;
   width: 100%;
-  padding: 20px;
+  padding: 1px 0 30px 0;
   text-align: center;
 }
 .search-btn__heading {
@@ -953,6 +953,7 @@ a {
 }
 
 .functionality {
+  counter-reset: item;
   padding: 0;
 }
 @media all and (min-width: 992px) {
@@ -971,12 +972,13 @@ a {
   list-style: none;
 }
 .functionality li:before {
+  content: counter(item) " ";
+  counter-increment: item;
   display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   color: #fff;
-  margin-left: -10px;
   width: 25px;
   height: 25px;
   border-radius: 100px;
