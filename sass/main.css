@@ -512,8 +512,9 @@ a {
   }
 }
 .footer__heading {
-  font-weight: 400;
+  font-weight: lighter;
   margin: 10px 0;
+  font-size: 18px;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .footer__heading {
@@ -559,6 +560,9 @@ a {
   .footer-nav__icon {
     margin-right: 5px;
   }
+}
+.footer-nav ul {
+  list-style-type: none;
 }
 
 .main-menu {
@@ -937,7 +941,7 @@ a {
 
 .functioning {
   width: 100%;
-  padding: 0px 15px;
+  padding: 0 10px 0 15px;
 }
 .functioning__heading {
   font-weight: 700;
@@ -1047,6 +1051,7 @@ a {
 }
 
 .menu {
+  width: 100%;
   background-color: #fff;
   text-decoration: none;
   border-radius: 15px;
@@ -1056,7 +1061,7 @@ a {
   margin: 0 auto;
 }
 .menu:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 .menu__pictures {
   border-radius: 15px 15px 0 0;
