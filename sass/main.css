@@ -429,11 +429,11 @@ a {
 }
 
 .btn {
-  color: #fff;
   font-size: 13px;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   cursor: pointer;
+  color: #fff;
   padding: 15px;
   margin: 40px 20px 20px 20px;
   border-radius: 20px;
@@ -758,10 +758,8 @@ a {
   right: 0;
   top: 0;
   z-index: 99;
-  -webkit-animation: fadeout ease 3s;
-          animation: fadeout ease 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: fadeout ease 3s 1 normal forwards;
+          animation: fadeout ease 3s 1 normal forwards;
 }
 
 .loader-inner {
@@ -860,7 +858,7 @@ a {
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -1;
   }
 }
 @keyframes fadeout {
@@ -869,7 +867,7 @@ a {
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -1;
   }
 }
 .main-index {
