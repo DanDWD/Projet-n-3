@@ -5,4 +5,14 @@
         &__logo {
             height: 35px;
         }
+    &__link {
+        color: $blackColor;
+        text-decoration: none;
+        &:hover {
+            color: $primarycolor;
+        }
+    }
+    &__logo {
+        height: 38px;
+    }
 }
