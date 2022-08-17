@@ -208,9 +208,10 @@
     }
 }
 
-.introduction__picture {
+.introduction {
     width: 100%;
     height: 695px;
-    object-fit: cover;
+    &__picture{
+        object-fit: cover;
+    }
 }
-
