@@ -536,6 +536,11 @@ a {
     justify-content: flex-end;
   }
 }
+@media all and (min-width: 992px) and (min-width: 992px) {
+  .footer-nav {
+    width: 100%;
+  }
+}
 .footer-nav__link {
   color: #fff;
   margin: 5px 0;
@@ -548,7 +553,7 @@ a {
   }
 }
 .footer-nav__link:hover {
-  color: #FF79DA;
+  color: #9356DC;
 }
 .footer-nav__icon {
   height: 15px;
@@ -563,6 +568,15 @@ a {
 }
 .footer-nav ul {
   list-style-type: none;
+}
+@media all and (min-width: 992px) {
+  .footer-nav ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .main-menu {

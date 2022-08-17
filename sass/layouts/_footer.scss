@@ -31,6 +31,9 @@
         gap: 20px;
         display: flex;
         justify-content: flex-end;
+        @include desktop {
+            width:100%;
+        }
     }
     &__link {
         color: $whitecolor;
@@ -41,7 +44,7 @@
             margin-right: 15px;
         }
         &:hover {
-            color: $secondarycolor;
+            color: $primarycolor;
         }
     }
     &__icon {
@@ -55,5 +58,12 @@
     }
         & ul {
             list-style-type: none;
+            @include desktop { 
+                padding-left: 0px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                width: 100%;
+            }
         }
 }
