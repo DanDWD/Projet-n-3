@@ -492,6 +492,13 @@ a {
 .header__logo {
   height: 35px;
 }
+.header__link {
+  color: #000;
+  text-decoration: none;
+}
+.header__link:hover {
+  color: #9356DC;
+}
 
 .footer {
   color: #fff;
@@ -1117,4 +1124,11 @@ a {
   font-size: 15px;
   margin: 0;
   padding: 0;
+}
+
+.introduction__picture {
+  width: 100%;
+  height: 695px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
