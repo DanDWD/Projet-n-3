@@ -568,10 +568,10 @@ a {
 }
 .footer-nav ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 @media all and (min-width: 992px) {
   .footer-nav ul {
-    padding-left: 0px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
