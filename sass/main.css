@@ -445,7 +445,7 @@ a {
   opacity: 0.85;
 }
 
-.heart {
+.heart, .introduction-tag_icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -455,19 +455,19 @@ a {
   position: relative;
   background-color: transparent;
 }
-.heart .fa-heart {
+.heart .fa-heart, .introduction-tag_icon .fa-heart {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 26px;
   position: absolute;
 }
-.heart .fa-regular {
+.heart .fa-regular, .introduction-tag_icon .fa-regular {
   color: #000;
   z-index: 3;
   background-color: transparent;
 }
-.heart .fa-solid {
+.heart .fa-solid, .introduction-tag_icon .fa-solid {
   color: #9356DC;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -477,7 +477,7 @@ a {
   opacity: 0;
   z-index: 5;
 }
-.heart .fa-solid:hover {
+.heart .fa-solid:hover, .introduction-tag_icon .fa-solid:hover {
   transition-duration: 0.4s;
   opacity: 1;
 }
@@ -1126,9 +1126,42 @@ a {
   padding: 0;
 }
 
-.introduction__picture {
+.introduction {
   width: 100%;
   height: 695px;
+}
+.introduction__picture {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.introduction {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 10px 10px 50px 10px;
+  margin: -50px auto 0 auto;
+  text-align: center;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+}
+
+.introduction-tag {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .introduction-tag {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) {
+  .introduction-tag {
+    display: block;
+  }
+}
+.introduction-tag__h1 {
+  font-size: 26px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
