@@ -51,6 +51,9 @@
             @include tablette { 
                 display: none;
             }
+            @include desktop {
+                display: none;
+            }
         }
     }
 }
