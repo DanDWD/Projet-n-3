@@ -607,6 +607,7 @@ a {
 }
 
 .introduction-tag {
+  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -622,6 +623,7 @@ a {
   }
 }
 .introduction-tag__h1 {
+  margin: 0 auto;
   font-size: 27px;
   font-weight: 500;
 }
@@ -666,7 +668,7 @@ a {
   border-radius: 15px;
   padding: 10px;
   margin: 20px auto;
-  box-shadow: 0.2rem 0.2rem 1.2rem rgba(5, 5, 5, 0.262745098);
+  box-shadow: 1px 5px 9px 0px rgba(111, 111, 111, 0.2);
   opacity: 0%;
   transition: 0.5s;
   cursor: pointer;
@@ -726,7 +728,7 @@ a {
   font-weight: bold;
 }
 
-.detail-product, .header-detail-product h3, .product-detail p {
+.product-detail, .product-detail h3, .product-detail p {
   flex: 1;
   white-space: nowrap;
   overflow: hidden;
@@ -823,48 +825,6 @@ a {
   width: 50px;
   left: 0;
   bottom: 0;
-}
-
-.detail-product {
-  background-color: #fff;
-  width: 100%;
-  max-width: 595px;
-  display: flex;
-  overflow: hidden;
-  padding: 10px;
-  margin: 20px auto;
-  text-align: left;
-  border-radius: 15px;
-  box-shadow: 1px 5px 9px 0px rgba(111, 111, 111, 0.2);
-  cursor: pointer;
-  max-width: 100%;
-  opacity: 0%;
-  transition: 0.5s;
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .detail-product {
-    width: 70%;
-  }
-}
-@media all and (min-width: 992px) {
-  .detail-product {
-    width: auto;
-  }
-}
-.detail-product:hover {
-  transition-property: padding-right;
-  padding-right: 80px;
-}
-.detail-product:hover .selection-check {
-  visibility: visible;
-  -webkit-animation: slide-left 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
-          animation: slide-left 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
-}
-.detail-product:hover .selection-rotate {
-  -webkit-animation: icon-rotate;
-          animation: icon-rotate;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
 }
 
 .product-detail h3 {
