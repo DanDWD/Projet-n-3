@@ -16,6 +16,7 @@
 }
 
 .introduction-tag {
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -26,6 +27,7 @@
         display: block;
     }
         &__h1 {
+            margin: 0 auto;
             font-size: 27px;
             font-weight: 500;
         }
@@ -60,7 +62,7 @@
 }
 
 .detail-product {
-    background-color: #fff;
+    background-color: $whitecolor;
     display: flex;
     overflow: hidden;
     text-align: left;
@@ -70,7 +72,7 @@
     border-radius: 15px;
     padding: 10px;
     margin: 20px auto;
-    box-shadow: 0.20rem 0.20rem 1.2rem #05050543;
+    box-shadow: 1px 5px 9px 0px rgba(111, 111, 111, 0.2);
     opacity: 0%;
     transition: 0.5s;
     cursor: pointer;
@@ -208,41 +210,6 @@
         left: 0;
         bottom: 0;
       }
-    }
-}
-
-.detail-product {
-    background-color: $whitecolor;
-    width: 100%;
-    max-width: 595px;
-    display: flex;
-    overflow: hidden;
-    padding: 10px;
-    margin: 20px auto;
-    text-align: left;
-    border-radius: 15px;
-    box-shadow: 1px 5px 9px 0px rgba(111, 111, 111, 0.2);
-    cursor: pointer;
-    max-width: 100%;
-    opacity: 0%;
-    transition: 0.5s;
-    @include tablette {
-        width: 70%;
-    }
-    @include desktop {
-        width: auto;
-    }
-    &:hover {
-        transition-property: padding-right;
-        padding-right: 80px;
-    }
-    &:hover .selection-check {
-        visibility: visible;
-        animation: slide-left 0.6s cubic-bezier(0.250, 0.450, 0.450, 0.940) both;
-    }
-    &:hover .selection-rotate {
-        animation: icon-rotate;
-        animation-duration: 0.5s;
     }
 }
 
