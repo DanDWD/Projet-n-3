@@ -6,6 +6,8 @@
         height: 35px;
         }
     &__link {
+        position: relative;
+        right: 10vw;
         color: $blackcolor;
         text-decoration: none;
         &:hover {
