@@ -527,13 +527,7 @@ a {
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .footer__heading {
-    width: 50%;
-    text-align: center;
-  }
-}
-@media all and (min-width: 992px) {
-  .footer__heading {
-    width: 25%;
+    width: 15%;
     text-align: center;
   }
 }
@@ -570,16 +564,16 @@ a {
   width: 15px;
   display: inline-block;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   .footer-nav__icon {
-    margin-right: 10px;
+    margin: auto 6px auto 5px;
   }
 }
 .footer-nav ul {
   list-style-type: none;
   padding-left: 0px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) and (max-width: 992px) {
   .footer-nav ul {
     display: flex;
     justify-content: space-evenly;
