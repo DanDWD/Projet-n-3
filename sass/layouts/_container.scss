@@ -46,10 +46,11 @@
     @include desktop {
         display: block;
     }
-        &__h1 {
-            font-size: 27px;
-            font-weight: 500;
-        }
+    &__h1 {
+        font-size: 27px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
 }
 
 .wrapper-product {
@@ -78,9 +79,9 @@
       font-weight: 400;
       font-size: 20px;
       text-align: left;
-      margin-top: 35px;
       padding-bottom: 10px;
-      &:after {
+      margin-top: 10px;
+      &::after {
         background-color: $tertiarycolor;
         position: absolute;
         height: 5px;
