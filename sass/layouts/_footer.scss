@@ -15,11 +15,11 @@
         font-weight: lighter;
         margin: 10px 0;
         font-size: 18px;
-        @include tablette { 
+        @include tablette {
             width: 15%;
             text-align: center; 
         } 
-        @include desktop { 
+        @include desktop {
             width: 15%;
             text-align: center; 
         } 
