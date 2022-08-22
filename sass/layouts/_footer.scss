@@ -19,6 +19,10 @@
             width: 15%;
             text-align: center; 
         } 
+        @include desktop { 
+            width: 15%;
+            text-align: center; 
+        } 
     }
 }
 
@@ -51,11 +55,20 @@
         @include tablette { 
             margin: auto 6px auto 5px;
         }
+        @include desktop { 
+            margin: auto 6px auto 5px;
+        }
     }
         & ul {
             list-style-type: none;
             padding-left: 0px;
             @include tablette { 
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                width: 100%;
+            }
+            @include desktop { 
                 display: flex;
                 justify-content: space-evenly;
                 flex-direction: row;
