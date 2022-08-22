@@ -615,6 +615,24 @@ a {
   position: relative;
 }
 
+.introduction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .introduction {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) {
+  .introduction {
+    display: block;
+  }
+}
+
 .introduction__picture {
   width: 100%;
   height: 75vh;
@@ -623,10 +641,11 @@ a {
 }
 
 .introduction-tag {
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  margin: auto 15px auto 2px;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .introduction-tag {
@@ -639,9 +658,24 @@ a {
   }
 }
 .introduction-tag__h1 {
-  margin: 0 auto;
   font-size: 27px;
   font-weight: 500;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .wrapper-product {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media all and (min-width: 992px) {
+  .wrapper-product {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -651,26 +685,24 @@ a {
 }
 @media all and (min-width: 992px) {
   .product {
-    width: 33%;
+    width: 32%;
   }
 }
-
 .product h2 {
+  position: relative;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 35px;
-  margin-bottom: 0px;
-  padding-bottom: 10px;
-  position: relative;
   text-align: left;
+  margin-top: 35px;
+  padding-bottom: 10px;
 }
 .product h2:after {
   background-color: #99E2D0;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
+  height: 5px;
   width: 50px;
+  left: 0;
+  bottom: 0;
 }
 
 .detail-product {
@@ -717,21 +749,6 @@ a {
           animation-duration: 0.5s;
 }
 
-.selection-rotate {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  width: 25px;
-  height: 25px;
-  border-radius: 100px;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-}
-.selection-rotate .fa-check {
-  color: #99E2D0;
-}
-
 .product-detail {
   display: flex;
   align-items: flex-end;
@@ -749,109 +766,6 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 5px;
-}
-
-.product-price {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  font-weight: bold;
-  padding-left: 10px;
-}
-
-.selection-check {
-  background-color: #99E2D0;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 70px;
-  height: 100px;
-  margin-top: -12px;
-  margin-left: 99%;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation: slide-default 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: slide-default 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  transition-duration: 0.6s;
-  visibility: hidden;
-}
-
-.introduction {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  padding: 10px 0px;
-}
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .introduction {
-    display: block;
-  }
-}
-@media all and (min-width: 992px) {
-  .introduction {
-    display: block;
-  }
-}
-.introduction__h1 {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .wrapper-product {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-@media all and (min-width: 992px) {
-  .wrapper-product {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 10px;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 992px) {
-  .product {
-    width: 90%;
-  }
-}
-@media all and (min-width: 992px) {
-  .product {
-    width: 32%;
-  }
-}
-.product h2 {
-  position: relative;
-  font-weight: 400;
-  font-size: 21px;
-  text-align: left;
-  margin-top: 35px;
-  padding-bottom: 10px;
-}
-.product h2:after {
-  background-color: #99E2D0;
-  position: absolute;
-  content: "";
-  height: 5px;
-  width: 50px;
-  left: 0;
-  bottom: 0;
-}
-
-.product-detail h3 {
-  font-weight: bold;
-}
-
-.product-detail, .product-detail h3, .product-detail p {
-  flex: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   padding: 5px;
 }
 
