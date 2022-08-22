@@ -495,10 +495,10 @@ a {
 }
 .header__link {
   font-size: 1.3rem;
-  position: relative;
-  right: 18vw;
+  position: absolute;
   color: #000;
   text-decoration: none;
+  left: 30px;
 }
 .header__link:hover {
   color: #9356DC;
