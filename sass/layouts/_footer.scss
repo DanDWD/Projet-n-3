@@ -16,11 +16,7 @@
         margin: 10px 0;
         font-size: 18px;
         @include tablette { 
-            width: 50%;
-            text-align: center; 
-        }
-        @include desktop { 
-            width: 25%;
+            width: 15%;
             text-align: center; 
         }
     }
@@ -52,14 +48,14 @@
         margin-right: 15px;
         width: 15px;
         display: inline-block;
-        @include desktop { 
-            margin-right: 10px;
+        @include tablette { 
+            margin: auto 6px auto 5px;
         }
     }
         & ul {
             list-style-type: none;
             padding-left: 0px;
-            @include desktop { 
+            @include tablette { 
                 display: flex;
                 justify-content: space-evenly;
                 flex-direction: row;
