@@ -669,6 +669,7 @@ a {
 .introduction-tag__h1 {
   font-size: 27px;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
@@ -697,13 +698,14 @@ a {
     width: 32%;
   }
 }
+
 .product h2 {
   position: relative;
   font-weight: 400;
   font-size: 20px;
   text-align: left;
-  margin-top: 35px;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 .product h2:after {
   background-color: #99E2D0;

@@ -698,6 +698,7 @@ a {
     width: 32%;
   }
 }
+
 .product h2 {
   position: relative;
   font-weight: 400;
@@ -706,7 +707,7 @@ a {
   padding-bottom: 10px;
   margin-top: 10px;
 }
-.product h2::after {
+.product h2:after {
   background-color: #99E2D0;
   position: absolute;
   height: 5px;
