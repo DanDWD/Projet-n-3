@@ -707,13 +707,14 @@ a {
   padding-bottom: 10px;
   margin-top: 10px;
 }
-.product h2::after {
+.product h2:after {
   background-color: #99E2D0;
   position: absolute;
   height: 5px;
   width: 50px;
   left: 0;
   bottom: 0;
+  content: "";
 }
 
 .detail-product {
