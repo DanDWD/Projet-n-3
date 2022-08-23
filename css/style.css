@@ -674,6 +674,16 @@ a {
   font-weight: 500;
   margin-bottom: 15px;
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .introduction-tag__icon {
+    width: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  .introduction-tag__icon {
+    width: 100%;
+  }
+}
 
 @media all and (min-width: 768px) and (max-width: 992px) {
   .wrapper-product {
@@ -693,7 +703,7 @@ a {
 
 @media all and (min-width: 768px) and (max-width: 992px) {
   .product {
-    width: 90%;
+    width: 100%;
   }
 }
 @media all and (min-width: 992px) {
