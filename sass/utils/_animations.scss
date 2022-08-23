@@ -1,13 +1,15 @@
 .product-list {
-	        animation: move-up 0.5s linear forwards;
+    animation: move-up 0.5s linear forwards;
 }
 
 @keyframes move-up {
     0% {
-      opacity: 0%;
+    opacity: 0%;
+    transform: translateY(20px);
     }
     100% {
-      opacity: 100%;
+    opacity: 100%;
+    transform: translateY(0px);
     }
 }
 
@@ -26,21 +28,21 @@
 
 @keyframes move-left {
     0% {
-              transform: translateX(0);
+    transform: translateX(0);
     }
     100% {
-              transform: translateX(-120px);
+    transform: translateX(-120px);
     }
 }
 
 @keyframes move-return {
     0% {
-              transform: translateX(-120px);
-              opacity: 0%;
+        transform: translateX(-120px);
+        opacity: 0%;
     }
     100% {
-              transform: translateX(0px);
-              opacity: 100%;
+        transform: translateX(0px);
+        opacity: 100%;
     }
   }
 
