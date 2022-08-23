@@ -5,9 +5,11 @@
 @keyframes move-up {
   0% {
     opacity: 0%;
+    transform: translateY(20px);
   }
   100% {
     opacity: 100%;
+    transform: translateY(0px);
   }
 }
 
@@ -32,13 +34,13 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px);
   }
 }
 
 @keyframes move-return {
   0% {
-    transform: translateX(-70px);
+    transform: translateX(-100px);
     opacity: 0%;
   }
   100% {

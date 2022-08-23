@@ -7,18 +7,22 @@
 @-webkit-keyframes move-up {
   0% {
     opacity: 0%;
+    transform: translateY(20px);
   }
   100% {
     opacity: 100%;
+    transform: translateY(0px);
   }
 }
 
 @keyframes move-up {
   0% {
     opacity: 0%;
+    transform: translateY(20px);
   }
   100% {
     opacity: 100%;
+    transform: translateY(0px);
   }
 }
 .product-1 {
@@ -46,7 +50,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px);
   }
 }
 
@@ -55,12 +59,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-70px);
+    transform: translateX(-100px);
   }
 }
 @-webkit-keyframes move-return {
   0% {
-    transform: translateX(-70px);
+    transform: translateX(-100px);
     opacity: 0%;
   }
   100% {
@@ -70,7 +74,7 @@
 }
 @keyframes move-return {
   0% {
-    transform: translateX(-70px);
+    transform: translateX(-100px);
     opacity: 0%;
   }
   100% {
@@ -670,6 +674,16 @@ a {
   font-weight: 500;
   margin-bottom: 15px;
 }
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .introduction-tag__icon {
+    width: 100%;
+  }
+}
+@media all and (min-width: 992px) {
+  .introduction-tag__icon {
+    width: 100%;
+  }
+}
 
 @media all and (min-width: 768px) and (max-width: 992px) {
   .wrapper-product {
@@ -689,7 +703,7 @@ a {
 
 @media all and (min-width: 768px) and (max-width: 992px) {
   .product {
-    width: 90%;
+    width: 100%;
   }
 }
 @media all and (min-width: 992px) {
@@ -763,14 +777,16 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 5px;
+  margin: 1px;
 }
 
 .product-price {
   font-weight: bold;
+  margin-bottom: 0px;
+  padding-right: 11px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 10px;
 }
 
 .selection-check {
@@ -778,10 +794,10 @@ a {
   display: flex;
   align-items: center;
   height: 100px;
-  width: 70px;
+  width: 90px;
   position: absolute;
   visibility: hidden;
-  margin-left: 99%;
+  margin-left: 100%;
   margin-top: -12px;
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
@@ -795,9 +811,10 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  border-radius: 100px;
-  width: 25px;
-  height: 25px;
+  border-radius: 15px;
+  width: 28px;
+  height: 28px;
+  margin-left: 31px;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
 }
