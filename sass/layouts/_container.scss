@@ -3,7 +3,6 @@
     text-align: center;
     margin: -50px auto 0 auto;
     padding: 10px;
-    padding-bottom: 50px;
     background-color: $backgroundGrey;
     border-radius: 50px 50px 0 0;
     position: relative;
@@ -87,10 +86,6 @@
     width: 40px;
 }
 
-
-
-
-
 .detail-product {
     background-color: $whitecolor;
     display: flex;
@@ -115,11 +110,11 @@
 }
 
 .detail-product:hover {
-    transition-property: padding-right;
     padding-right: 80px;
+    transition-property: padding-right;
     &:hover .selection-check { 
-        visibility: visible;
         animation: move-left 0.6s cubic-bezier(0.250, 0.450, 0.450, 0.940) both;
+        visibility: visible;
     }
 }
 
