@@ -139,6 +139,7 @@
 .product-price {
     font-weight: bold;
     margin-bottom: 0px;
+    padding-right: 11px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -165,6 +166,7 @@
     border-radius: 15px;
     width: 28px;
     height: 28px;
+    margin-left: 31px;
     animation-duration: 0.5s;
         & .fa-check {
             color: $tertiarycolor;
