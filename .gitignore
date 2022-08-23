@@ -20,3 +20,7 @@ sass/base/dist/_base.css
 sass/base/dist/_base.css.map
 sass/base/dist/_base.min.css
 sass/base/dist/_base.min.css.map
+sass/utils/dist/_animations.css
+sass/utils/dist/_animations.css.map
+sass/utils/dist/_animations.min.css
+sass/utils/dist/_animations.min.css.map
