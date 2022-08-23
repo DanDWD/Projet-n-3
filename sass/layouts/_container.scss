@@ -25,6 +25,7 @@
 .introduction__picture {
     width: 100%;
     object-fit: cover;
+    height: 30vh;
     @include tablette {
         height: 35vh;
     }
@@ -180,27 +181,3 @@
             color: $tertiarycolor;
         }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-

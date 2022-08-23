@@ -640,6 +640,7 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 30vh;
 }
 @media all and (min-width: 768px) and (max-width: 992px) {
   .introduction__picture {
