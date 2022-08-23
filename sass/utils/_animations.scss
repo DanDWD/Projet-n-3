@@ -29,13 +29,13 @@
               transform: translateX(0);
     }
     100% {
-              transform: translateX(-70px);
+              transform: translateX(-90px);
     }
 }
 
 @keyframes move-return {
     0% {
-              transform: translateX(-70px);
+              transform: translateX(-90px);
               opacity: 0%;
     }
     100% {
