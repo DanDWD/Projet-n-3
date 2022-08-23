@@ -133,14 +133,15 @@
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 5px;
+    margin: 1px;
 }
 
 .product-price {
     font-weight: bold;
+    margin-bottom: 0px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 10px;
 }
 
 .selection-check {
@@ -148,10 +149,10 @@
     display: flex;
     align-items: center;
     height: 100px;
-    width: 70px;
+    width: 90px;
     position: absolute;
     visibility: hidden;
-    margin-left: 99%;
+    margin-left: 100%;
     margin-top : -12px;
     animation-duration: 0.6s;
     animation: move-return 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -161,9 +162,9 @@
 .selection-rotate {
     @include centering;
     background-color: $whitecolor;
-    border-radius: 100px;
-    width: 25px;
-    height: 25px;
+    border-radius: 15px;
+    width: 28px;
+    height: 28px;
     animation-duration: 0.5s;
         & .fa-check {
             color: $tertiarycolor;
