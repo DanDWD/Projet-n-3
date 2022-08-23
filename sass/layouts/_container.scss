@@ -50,6 +50,14 @@
         font-weight: 500;
         margin-bottom: 15px;
     }
+    &__icon {
+        @include tablette {
+            width: 100%;
+        }
+        @include desktop {
+            width: 100%;
+        }
+    }
 }
 
 .wrapper-product {
@@ -68,7 +76,7 @@
 
 .product {
     @include tablette {
-      width: 90%;
+      width: 100%;
     }
     @include desktop {
       width: 32%;
