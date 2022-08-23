@@ -702,19 +702,12 @@ a {
 .product h2 {
   position: relative;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
   padding-bottom: 10px;
   margin-top: 10px;
-}
-.product h2:after {
-  background-color: #99E2D0;
-  position: absolute;
-  height: 5px;
-  width: 50px;
-  left: 0;
-  bottom: 0;
-  content: "";
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
 }
 
 .detail-product {
