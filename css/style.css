@@ -46,7 +46,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-80px);
+    transform: translateX(-120px);
   }
 }
 
@@ -55,12 +55,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-80px);
+    transform: translateX(-120px);
   }
 }
 @-webkit-keyframes move-return {
   0% {
-    transform: translateX(-80px);
+    transform: translateX(-120px);
     opacity: 0%;
   }
   100% {
@@ -70,7 +70,7 @@
 }
 @keyframes move-return {
   0% {
-    transform: translateX(-80px);
+    transform: translateX(-120px);
     opacity: 0%;
   }
   100% {
