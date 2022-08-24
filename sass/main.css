@@ -84,18 +84,18 @@
 }
 @-webkit-keyframes icon-rotate {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes icon-rotate {
   0% {
-    transform: rotate(-360deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -764,8 +764,10 @@ a {
 .detail-product:hover .selection-rotate {
   -webkit-animation: icon-rotate;
           animation: icon-rotate;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .product-detail h3 {
@@ -777,14 +779,13 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 5px;
-  margin: 1px;
+  padding: 8px;
+  margin: -5px;
 }
 
 .product-price {
   font-weight: bold;
-  margin-bottom: 0px;
-  padding-right: 11px;
+  margin: auto 25px 6px auto;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -794,7 +795,7 @@ a {
   background-color: #99E2D0;
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 90px;
   width: 90px;
   position: absolute;
   visibility: hidden;
@@ -1058,9 +1059,11 @@ a {
   position: absolute;
   color: #fff;
   background-color: #9356DC;
-  width: 25px;
-  height: 25px;
-  border-radius: 100px;
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 15px;
+  display: block;
 }
 
 .functionality-tag {
