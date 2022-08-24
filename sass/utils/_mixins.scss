@@ -15,3 +15,8 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin green-line {
+    border-bottom: solid 3px $tertiarycolor;
+    width: 40px;
+}
