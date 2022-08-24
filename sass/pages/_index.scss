@@ -96,9 +96,11 @@
         position: absolute;
         color: $whitecolor;
         background-color: $primarycolor;
-        width: 25px;
-        height: 25px;
-        border-radius: 100px;
+        width: 24px;
+        height: 24px;
+        padding: 3px;
+        border-radius: 15px;
+        display: block;
     }
 }
 
