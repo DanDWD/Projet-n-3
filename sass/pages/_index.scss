@@ -59,8 +59,9 @@
 }
 
 .functioning {
+    background-color: $whitecolor;
     width: 100%;
-    padding: 0 10px 0 15px;
+    padding: 10px 10px 40px 15px;
     &__heading {
         font-weight: 700;
         font-size: 22px;
@@ -126,12 +127,18 @@
     &__icon {
         font-size: 18px;
         color: #5f5e5e;
-        flex: 1;
+        flex: 0.5;
+        @include tablette { 
+            flex: 1;
+        }
+        @include desktop {
+            flex: 1;
+        }
     }
     &__text {
         font-size: 14px;
         text-align: left;
-        flex: 2;
+        flex: 3;
         cursor:default;
     }
 }
