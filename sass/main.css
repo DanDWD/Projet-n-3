@@ -1,3 +1,4 @@
+/***animation of products appearing***/
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap);
 .product-list {
   -webkit-animation: move-up 0.5s linear forwards;
@@ -45,6 +46,18 @@
           animation-delay: 1s;
 }
 
+/***animation of products appearing - END***/
+/***Text is pushed to the left***/
+.detail-product:hover {
+  padding-right: 80px;
+  transition-property: padding-right;
+}
+.detail-product:hover:hover .selection-check {
+  -webkit-animation: move-left 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
+          animation: move-left 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
+  visibility: visible;
+}
+
 @-webkit-keyframes move-left {
   0% {
     transform: translateX(0);
@@ -62,26 +75,52 @@
     transform: translateX(-100px);
   }
 }
+/***Text is pushed to the left - END***/
+/***check animation return***/
+.selection-check {
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation: move-return 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: move-return 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition-duration: 0.6s;
+}
+
 @-webkit-keyframes move-return {
   0% {
     transform: translateX(-100px);
-    opacity: 0%;
+    opacity: 100%;
+  }
+  99% {
+    opacity: 100%;
   }
   100% {
     transform: translateX(0px);
-    opacity: 100%;
   }
 }
+
 @keyframes move-return {
   0% {
     transform: translateX(-100px);
-    opacity: 0%;
+    opacity: 100%;
+  }
+  99% {
+    opacity: 100%;
   }
   100% {
     transform: translateX(0px);
-    opacity: 100%;
   }
 }
+/***check animation return - END***/
+/***icon rotation***/
+.detail-product:hover .selection-rotate {
+  -webkit-animation: icon-rotate;
+          animation: icon-rotate;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
 @-webkit-keyframes icon-rotate {
   0% {
     transform: rotate(0deg);
@@ -90,6 +129,7 @@
     transform: rotate(360deg);
   }
 }
+
 @keyframes icon-rotate {
   0% {
     transform: rotate(0deg);
@@ -98,6 +138,7 @@
     transform: rotate(360deg);
   }
 }
+/***icon rotation - END***/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -751,25 +792,6 @@ a {
   }
 }
 
-.detail-product:hover {
-  padding-right: 80px;
-  transition-property: padding-right;
-}
-.detail-product:hover:hover .selection-check {
-  -webkit-animation: move-left 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
-          animation: move-left 0.6s cubic-bezier(0.25, 0.45, 0.45, 0.94) both;
-  visibility: visible;
-}
-
-.detail-product:hover .selection-rotate {
-  -webkit-animation: icon-rotate;
-          animation: icon-rotate;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
 .product-detail h3 {
   font-weight: bold;
 }
@@ -801,11 +823,6 @@ a {
   visibility: hidden;
   margin-left: 100%;
   margin-top: -12px;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  -webkit-animation: move-return 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-          animation: move-return 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  transition-duration: 0.6s;
 }
 
 .selection-rotate {
@@ -817,8 +834,6 @@ a {
   width: 28px;
   height: 28px;
   margin-left: 31px;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
 }
 .selection-rotate .fa-check {
   color: #99E2D0;
