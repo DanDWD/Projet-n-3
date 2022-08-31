@@ -1042,8 +1042,9 @@ a {
 }
 
 .functioning {
+  background-color: #fff;
   width: 100%;
-  padding: 0 10px 0 15px;
+  padding: 10px 10px 40px 15px;
 }
 .functioning__heading {
   font-weight: 700;
@@ -1116,12 +1117,22 @@ a {
 .functionality-tag__icon {
   font-size: 18px;
   color: #5f5e5e;
-  flex: 1;
+  flex: 0.5;
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .functionality-tag__icon {
+    flex: 1;
+  }
+}
+@media all and (min-width: 992px) {
+  .functionality-tag__icon {
+    flex: 1;
+  }
 }
 .functionality-tag__text {
   font-size: 14px;
   text-align: left;
-  flex: 2;
+  flex: 3;
   cursor: default;
 }
 
