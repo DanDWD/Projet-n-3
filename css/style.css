@@ -916,21 +916,21 @@ a {
 }
 
 .loader-line-wrap:nth-child(1) .loader-line {
-  border-color: hsl(267deg, 66%, 60%);
+  border-color: #9356DC;
   height: 90px;
   width: 90px;
   top: 7px;
 }
 
 .loader-line-wrap:nth-child(2) .loader-line {
-  border-color: hsl(317deg, 100%, 74%);
+  border-color: #FF79DA;
   height: 76px;
   width: 76px;
   top: 14px;
 }
 
 .loader-line-wrap:nth-child(3) .loader-line {
-  border-color: hsl(165deg, 56%, 74%);
+  border-color: #99E2D0;
   height: 62px;
   width: 62px;
   top: 21px;
