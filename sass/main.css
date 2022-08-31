@@ -26,26 +26,36 @@
     transform: translateY(0px);
   }
 }
-.product-1 {
+.product--1 {
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
 }
-
-.product-2 {
+.product--2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-
-.product-3 {
+.product--3 {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
-
-.product-4 {
+.product--4 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
+/*
+.product--1 {
+    animation-delay: 0.1s;
+}
+.product--2  {
+    animation-delay: 0.4s;
+}
+.product--3 {
+    animation-delay: 0.7s;
+}
+.product--4  {
+    animation-delay: 1s;
+} */
 /***animation of products appearing - END***/
 /***Text is pushed to the left***/
 .detail-product:hover {
