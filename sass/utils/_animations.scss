@@ -18,25 +18,25 @@ $anim-delay: 0.3s;
 }
 
 .product {
-    @for $i from 2 to 4 {
+    @for $i from 1 through 4 {
         &--#{$i} {
-            animation-delay: 0.1s + $anim-delay * $i;
+            animation-delay: -0.2s + ($anim-delay * $i);
         }
 
     }
 }
 
 /*
-.product-1 {
+.product--1 {
     animation-delay: 0.1s;
 }
-.product-2  {
+.product--2  {
     animation-delay: 0.4s;
 }
-.product-3 {
+.product--3 {
     animation-delay: 0.7s;
 }
-.product-4  {
+.product--4  {
     animation-delay: 1s;
 } */
 
