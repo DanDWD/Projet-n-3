@@ -50,19 +50,19 @@
 .loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
 
 .loader-line-wrap:nth-child(1) .loader-line {
-    border-color: hsl(267, 66%, 60%);
+    border-color: $primarycolor;
     height: 90px;
     width: 90px;
     top: 7px;
 }
 .loader-line-wrap:nth-child(2) .loader-line {
-    border-color: hsl(317, 100%, 74%);
+    border-color: $secondarycolor;
     height: 76px;
     width: 76px;
     top: 14px;
 }
 .loader-line-wrap:nth-child(3) .loader-line {
-    border-color: hsl(165, 56%, 74%);
+    border-color: $tertiarycolor;
     height: 62px;
     width: 62px;
     top: 21px;
