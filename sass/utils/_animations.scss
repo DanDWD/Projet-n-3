@@ -1,4 +1,7 @@
 /***animation of products appearing***/
+$anim-delay: 0.3s;
+
+
 .product-list {
     animation: move-up 0.5s linear forwards;
 }
@@ -14,6 +17,16 @@
     }
 }
 
+.product {
+    @for $i from 1 to 4 {
+        &--#{$i} {
+            animation-delay: 0.1s + $anim-delay * $i;
+        }
+
+    }
+}
+
+/*
 .product-1 {
     animation-delay: 0.1s;
 }
@@ -25,7 +38,8 @@
 }
 .product-4  {
     animation-delay: 1s;
-}
+} */
+
 /***animation of products appearing - END***/
 
 /***Text is pushed to the left***/
